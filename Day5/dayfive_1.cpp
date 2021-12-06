@@ -35,13 +35,7 @@ int main() {
 		std::string arrow;
 		char comma;
 
-		iss >> x1;
-		iss >> comma;
-		iss >> y1;
-		iss >> arrow;
-		iss >> x2;
-		iss >> comma;
-		iss >> y2;
+		iss >> x1 >> comma >> y1 >> arrow >> x2 >> comma >> y2;
 
 		if (x1 == x2 || y1 == y2) {
 
