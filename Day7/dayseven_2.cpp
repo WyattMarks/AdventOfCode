@@ -38,13 +38,13 @@ int main() {
 		for (int j = 0; j < pos.size(); j++) {
 			//n(n+1) / 2
 			int d = abs(i - pos[j]);
-			cost[i] += (d * (d + 1)) / 2;
+			cost[i - min] += (d * (d + 1)) / 2;
 		}
 
-		if (cost[i] < cost[minCost]) {
+		if (cost[i - min] < cost[minCost - min]) {
 			minCost = i;
 		}
 	}
 
-	std::cout << minCost << " " << cost[minCost];
+	std::cout << minCost << " " << cost[minCost - min];
 }
